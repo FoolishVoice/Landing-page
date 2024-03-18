@@ -8,7 +8,8 @@ body {
 ul {
     padding: 0;
     display: flex;
-
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
 li {
@@ -25,17 +26,29 @@ button {
     background-color: #3882F6;
     padding: 6px 12px;
     max-width: 110px;
+    border-radius: 10px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.button {
+    border: none;
     margin-top: 8px;
 }
 
 .section {
-    padding: 0px 200px;
+    padding: 0px 15vw;
 }
 
 .section.one {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
+}
+
+.main.left {
+    max-width: 550px;
+    gap: 8px;
 }
 
 .head, .main.text {
@@ -47,6 +60,7 @@ button {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .main.text {
@@ -63,12 +77,14 @@ button {
 
 .intro {
     display: flex;
-    padding: 64px 0;
+    justify-content: space-between;
+    padding: 100px 0;
+    flex-wrap: wrap;
 }
 
 .main.image {
-    height: 270px;
-    width: 440px;
+    height: 290px;
+    width: 460px;
 }
 
 .section.two {
@@ -89,12 +105,16 @@ button {
     width: 150px;
     border: 3px solid;
     border-color: #3882F6;
+    border-radius: 10px;
 }
 
 .imgdescription {
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 64px;
+    justify-content: center;
+    gap: 120px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .box {
@@ -110,7 +130,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 64px 264px;
+    padding: 100px 26vw;
 }
 
 .inspire {
@@ -125,4 +145,48 @@ button {
     justify-content: right;
     width: 760px;
     font-weight: bold;
+}
+
+.section.four {
+    padding: 80px 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.bluebox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 36px 52px;
+    color: #F9FAF8;
+    max-width: 50em;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.boxtext {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxtitle {
+    font-weight: bold;
+    font-size: large;
+}
+
+
+button.boxbutton {
+    border: 2px solid #F9FAF8;
+    min-width: 110px;
+}
+
+.footer.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 2em;
 }
